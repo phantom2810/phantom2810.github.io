@@ -2,149 +2,527 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Portfolio highlighting skills, work experience and projects">
-    <title>Aayush Agarwal - Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BTV0sWCAbm/tfZeQ10PZtUaN14WwYjH+LM6czS4EzFqqpwPIYOvTo95OfzmiPl1x" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aayush Agarwal - AI Researcher & MS Computer Engineering student at NYU. Portfolio showcasing AI/ML projects and experience.">
+    <meta name="keywords" content="AI, Machine Learning, Portfolio, NYU, Computer Engineering, Research">
+    <meta name="author" content="Aayush Agarwal">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Aayush Agarwal - AI Researcher Portfolio">
+    <meta property="og:description" content="AI Researcher & MS Computer Engineering student at NYU specializing in multimodal learning and MLOps.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://phantom2810.github.io">
+    
+    <title>Aayush Agarwal - AI Researcher</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+    
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="80" tabindex="0">
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
-    <div class="container">
-        <a class="navbar-brand fw-bold" href="#">Aayush Agarwal</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
-            <button class="btn btn-sm btn-outline-secondary ms-lg-3 mt-3 mt-lg-0" id="theme-toggle" aria-label="Toggle dark mode">
-                <i class="bi bi-moon"></i>
-            </button>
+<body>
+    <!-- Loading Screen -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="loader-logo">🚀</div>
+            <div class="loader-text">Loading...</div>
         </div>
     </div>
-</nav>
 
-<header class="hero">
-    <div class="container">
-        <h1 class="display-4">Aayush Agarwal</h1>
-        <p class="lead">AI Researcher &amp; MS Computer Engineering student at NYU</p>
-        <a href="#contact" class="btn btn-primary mt-3">Get In Touch</a>
-    </div>
-</header>
-
-<main class="container py-5">
-    <section id="about" class="mb-5">
-        <h2>About Me</h2>
-        <p>I am a Computer Engineering graduate student at NYU specializing in artificial intelligence. My work spans multimodal learning, MLOps and distributed training. I enjoy building scalable ML systems that solve real-world problems.</p>
-    </section>
-    <section id="education" class="mb-5">
-        <h2>Education</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <h5>New York University <small class="text-muted">MS Computer Engineering, 2023 - 2025</small></h5>
-                <p>Focus on AI with coursework in MLOps, Generative AI and Deep Learning.</p>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Aayush</a>
             </div>
-            <div class="timeline-item">
-                <h5>Vishwakarma Institute of Technology <small class="text-muted">B.Tech Computer Engineering, 2018 - 2022</small></h5>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
-    </section>
-    <section id="skills" class="mb-5">
-        <h2>Skills</h2>
-        <ul class="list-inline">
-            <li class="list-inline-item badge bg-secondary m-1">Python</li>
-            <li class="list-inline-item badge bg-secondary m-1">SQL</li>
-            <li class="list-inline-item badge bg-secondary m-1">C++</li>
-            <li class="list-inline-item badge bg-secondary m-1">Java</li>
-            <li class="list-inline-item badge bg-secondary m-1">PyTorch</li>
-            <li class="list-inline-item badge bg-secondary m-1">TensorFlow</li>
-            <li class="list-inline-item badge bg-secondary m-1">Docker</li>
-            <li class="list-inline-item badge bg-secondary m-1">Kubernetes</li>
-            <li class="list-inline-item badge bg-secondary m-1">MLflow</li>
-        </ul>
-    </section>
-    <section id="experience" class="mb-5">
-        <h2>Work Experience</h2>
-        <div class="timeline">
-            <div class="timeline-item mb-3">
-                <h5>AI Researcher <small class="text-muted">New York University | May 2024 - Present</small></h5>
-                <p>Fine-tuning ViLT for automated report generation on the MIMIC-CXR dataset and building distributed training pipelines on NYU HPC.</p>
-            </div>
-            <div class="timeline-item mb-3">
-                <h5>Software Engineer (AI) <small class="text-muted">Google via Crest Data | Jan 2022 - Apr 2023</small></h5>
-                <p>Integrated anomaly-detection algorithms into Chronicle, built log monitoring tools with GCP, and automated parser deployment with Docker and Kubernetes.</p>
-            </div>
-            <div class="timeline-item mb-3">
-                <h5>AI Intern <small class="text-muted">Tech M | Jul 2021 - Nov 2021</small></h5>
-                <p>Developed an NLP-driven chatbot using BERT and improved object detection models like YOLO and Faster R-CNN.</p>
-            </div>
-            <div class="timeline-item">
-                <h5>AI Researcher <small class="text-muted">IBM Research | Sep 2020 - Jun 2021</small></h5>
-                <p>Built a web application leveraging IBM's Differential Privacy library and evaluated ML models under privacy constraints.</p>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
             </div>
         </div>
-    </section>
-    <section id="projects" class="mb-5">
-        <h2>Projects</h2>
-        <div class="row">
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">MLOps Pipeline for News Recommendation</h5>
-                        <p class="card-text">Provisioned cloud GPUs with Terraform and Ansible, used PyTorch Lightning with Ray and tracked experiments in MLflow.</p>
-                    </div>
-                    <div class="card-footer text-center">
-                        <a href="#" class="btn btn-primary">GitHub</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Export Compliance Information Aggregator</h5>
-                        <p class="card-text">RAG-powered pipeline using LangChain, FAISS and OpenAI embeddings served via Flask for natural-language queries.</p>
-                    </div>
-                    <div class="card-footer text-center">
-                        <a href="#" class="btn btn-primary">GitHub</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Jailbreak Detection for LLMs</h5>
-                        <p class="card-text">Framework for simulating adversarial jailbreaks on GPT-based LLMs using PyTorch and Hugging Face Transformers.</p>
-                    </div>
-                    <div class="card-footer text-center">
-                        <a href="#" class="btn btn-primary">GitHub</a>
-                    </div>
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting">Hi, my name is</p>
+                <h1 class="hero-name">Aayush Agarwal</h1>
+                <h2 class="hero-title">AI Researcher & ML Engineer</h2>
+                <p class="hero-description">
+                    I'm a Computer Engineering graduate student at NYU specializing in artificial intelligence. 
+                    My work spans multimodal learning, MLOps and distributed training. I enjoy building 
+                    scalable ML systems that solve real-world problems.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Get In Touch</a>
                 </div>
             </div>
         </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
     </section>
-    <section id="contact" class="mb-5">
-        <h2>Contact</h2>
-        <p><i class="bi bi-envelope"></i> <a href="mailto:aa11057@stern.nyu.edu">aa11057@stern.nyu.edu</a></p>
-        <p><i class="bi bi-phone"></i> +1 929-703-9945</p>
-        <p><i class="bi bi-linkedin"></i> <a href="https://www.linkedin.com/in/aayush-agarwal/">LinkedIn</a></p>
-        <p><i class="bi bi-github"></i> <a href="https://github.com/AayushAgarwal">GitHub</a></p>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me better</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Hello! I'm Aayush, an AI researcher and MS Computer Engineering student at NYU. 
+                        My passion lies in developing intelligent systems that can understand and interact 
+                        with the world through multiple modalities.
+                    </p>
+                    <p>
+                        I have experience working with cutting-edge AI technologies at companies like Google, 
+                        IBM Research, and various research institutions. My work focuses on making AI more 
+                        accessible and practical for real-world applications.
+                    </p>
+                    
+                    <div class="education">
+                        <h3>Education</h3>
+                        <div class="education-item">
+                            <div class="education-header">
+                                <h4>Master of Science in Computer Engineering</h4>
+                                <span class="education-year">2023 - 2025</span>
+                            </div>
+                            <p class="education-school">New York University</p>
+                            <p class="education-description">Focus on AI with coursework in MLOps, Generative AI and Deep Learning.</p>
+                        </div>
+                        
+                        <div class="education-item">
+                            <div class="education-header">
+                                <h4>Bachelor of Technology in Computer Engineering</h4>
+                                <span class="education-year">2018 - 2022</span>
+                            </div>
+                            <p class="education-school">Vishwakarma Institute of Technology</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills">
+                    <h3>Technologies I work with</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">Python</div>
+                        <div class="skill-item">PyTorch</div>
+                        <div class="skill-item">TensorFlow</div>
+                        <div class="skill-item">MLflow</div>
+                        <div class="skill-item">Docker</div>
+                        <div class="skill-item">Kubernetes</div>
+                        <div class="skill-item">SQL</div>
+                        <div class="skill-item">C++</div>
+                        <div class="skill-item">Java</div>
+                        <div class="skill-item">JavaScript</div>
+                        <div class="skill-item">React</div>
+                        <div class="skill-item">Node.js</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-</main>
 
-<footer class="bg-light text-center py-3">
-    <div class="container">
-        <p class="mb-0">&copy; <span id="year"></span> Aayush Agarwal. All rights reserved.</p>
-    </div>
-</footer>
+    <!-- Experience Section -->
+    <section id="experience" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experience</h2>
+                <p class="section-subtitle">My professional journey</p>
+            </div>
+            
+            <div class="experience-list">
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3>AI Researcher</h3>
+                        <div class="experience-company">New York University</div>
+                        <div class="experience-period">May 2024 - Present</div>
+                    </div>
+                    <div class="experience-description">
+                        <p>Developing advanced Vision-Language systems using ViLT (Vision-Language Transformer) for medical image analysis on the MIMIC-CXR dataset with 377,000+ images and 227,827 reports.</p>
+                        <ul>
+                            <li><strong>Multimodal AI Development:</strong> Successfully transitioned from MedCLIP-based approach to ViLT fine-tuning, achieving better feature alignment and interpretability through self-attention mechanisms</li>
+                            <li><strong>Large-Scale Data Processing:</strong> Navigated complex IRB protocols and implemented secure data handling for 377,000+ medical images with efficient preprocessing pipelines</li>
+                            <li><strong>Clinical Integration:</strong> Created interpretable framework for clinical question-answering with confidence scoring and validation protocols across different patient demographics</li>
+                            <li><strong>Technical Innovation:</strong> Implemented token-level alignment between image patches and clinical vocabulary, enabling both report generation and targeted medical queries</li>
+                            <li><strong>Research Impact:</strong> Established robust validation protocols that identified performance variations across patient groups—critical insights for healthcare AI deployment</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3>ML Engineer - Security Analytics</h3>
+                        <div class="experience-company">Google Chronicle (Google Security Operations)</div>
+                        <div class="experience-period">Jan 2022 - Apr 2023</div>
+                    </div>
+                    <div class="experience-description">
+                        <p>Built production-ready ML systems for Google Chronicle SIEM platform, processing 30 PB of security telemetry daily from 500,000+ users and reducing client onboarding from 3+ weeks to under 3 days.</p>
+                        <ul>
+                            <li><strong>Foundation Model Development:</strong> Led training of transformer-based models on petabytes of security logs using distributed Ray training, handling 70+ vendor log formats from structured JSON to unstructured syslog</li>
+                            <li><strong>Production MLOps:</strong> Implemented containerized Docker/Kubernetes deployment pipelines with automated retraining workflows, achieving 99.9% uptime and 40% reduction in alert resolution time</li>
+                            <li><strong>AI Safety & Reliability:</strong> Built robust model governance with version control, rollback mechanisms, and adversarial testing to ensure safe deployment in security-critical environments</li>
+                            <li><strong>Enterprise Scale Impact:</strong> Deployed 10+ ML-enhanced parsers serving threat detection across diverse enterprise environments, enabling rapid scaling of Chronicle's customer base</li>
+                            <li><strong>Human-in-the-Loop Systems:</strong> Created feedback loops where security analysts could flag misclassifications, automatically triggering model retraining for continuous improvement</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3>AI/ML Engineering Intern</h3>
+                        <div class="experience-company">Tech Mahindra</div>
+                        <div class="experience-period">Jul 2021 - Nov 2021</div>
+                    </div>
+                    <div class="experience-description">
+                        <p>Led development of two production AI systems: a multimodal chatbot and vehicle recognition pipeline, achieving significant performance improvements and automation gains.</p>
+                        <ul>
+                            <li><strong>Multimodal NLP System:</strong> Fine-tuned BERT encoder with multimodal fusion layer for text and image processing, deployed via Flask APIs on AWS Lambda with 25% increase in first-contact resolution</li>
+                            <li><strong>Computer Vision Pipeline:</strong> Built comprehensive vehicle recognition system using YOLO v3 + ResNet152v2 architecture, achieving 91% overall accuracy for make, color, and license plate detection</li>
+                            <li><strong>Performance Optimization:</strong> Implemented batch inference and post-training quantization, reducing response latency by 30% and cutting model refresh time from days to hours</li>
+                            <li><strong>Production Deployment:</strong> Automated preprocessing pipeline saving 10 engineer-hours per week, with full CI/CD integration and real-time monitoring</li>
+                            <li><strong>Dataset Engineering:</strong> Created and annotated custom dataset of 10,000+ vehicle images, benchmarked multiple architectures to optimize for small image classification</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3>AI Research Intern</h3>
+                        <div class="experience-company">IBM Research</div>
+                        <div class="experience-period">Sep 2020 - Jun 2021</div>
+                    </div>
+                    <div class="experience-description">
+                        <p>Developed comprehensive web application democratizing IBM's Differential Privacy library, enabling non-expert users to apply privacy-preserving ML techniques with 35% stronger privacy guarantees.</p>
+                        <ul>
+                            <li><strong>Privacy-Preserving ML:</strong> Implemented data-type-specific privacy mechanisms (Laplace, Gaussian, ExponentialCategorical) with automated epsilon calculation and sensitivity scaling</li>
+                            <li><strong>Full-Stack Development:</strong> Built modular Flask application with intuitive multi-step workflow for data upload, privacy parameter specification, and interactive results visualization</li>
+                            <li><strong>Performance Optimization:</strong> Achieved 90% baseline model performance retention while adding robust privacy protections, with memory optimization for large-scale datasets</li>
+                            <li><strong>Industry Collaboration:</strong> Demonstrated application to IBM Ireland team (original diffprivlib creators), leading to collaborative improvements in library functionality</li>
+                            <li><strong>Real-World Impact:</strong> Reduced privacy-preserving analysis time from days to hours, with two IBM teams successfully deploying for production use cases</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-mQ93Sfx8bVsgcF6edSxnl2xe50Tzw9uQWGWpZJYG1ChB+FA9bUkO+ogzAm8h1sxG" crossorigin="anonymous"></script>
-<script src="script.js"></script>
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">AI/ML projects showcasing production-ready systems</p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card featured">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=400&h=250&fit=crop&auto=format" alt="Movie Recommendation MLOps" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3>Production MLOps Movie Recommendation System</h3>
+                        <p>End-to-end MLOps pipeline with Matrix Factorization, Neural Collaborative Filtering and Transformer-based models. Features distributed training with Ray, MLflow tracking, Kubernetes deployment, and monitoring with Prometheus & Grafana.</p>
+                        <div class="project-tech">
+                            <span>PyTorch</span>
+                            <span>MLflow</span>
+                            <span>Ray</span>
+                            <span>Kubernetes</span>
+                            <span>Terraform</span>
+                            <span>Docker</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/phantom2810/movie-recommendation_system_MLOps" target="_blank" class="project-link" aria-label="View source code">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card featured">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=250&fit=crop&auto=format" alt="Real-Time News Recommendation" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3>Real-Time News Recommendation System</h3>
+                        <p>Scalable news recommendation using NAML, NPA & NRMS architectures on MIND dataset. Built complete MLOps infrastructure with streaming pipelines, FastAPI serving, and GitOps deployment achieving 95% uptime.</p>
+                        <div class="project-tech">
+                            <span>PyTorch Lightning</span>
+                            <span>Ray Tune</span>
+                            <span>FastAPI</span>
+                            <span>Terraform</span>
+                            <span>Argo Workflows</span>
+                            <span>Prometheus</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/DeepakSingh260/Real-Time-News-Recommnedation-System" target="_blank" class="project-link" aria-label="View source code">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=250&fit=crop&auto=format" alt="ChatGPT from Scratch" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3>ChatGPT-Style Language Model from Scratch</h3>
+                        <p>Complete implementation of a conversational AI using transformer architecture from scratch. Features two-stage training (pre-training + instruction fine-tuning), Stanford Alpaca dataset integration, and production-ready deployment.</p>
+                        <div class="project-tech">
+                            <span>PyTorch</span>
+                            <span>Transformers</span>
+                            <span>NLP</span>
+                            <span>Stanford Alpaca</span>
+                            <span>Instruction Tuning</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/phantom2810/ChatGPT-Style-Language-Model-from-Scratch" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&h=250&fit=crop&auto=format" alt="Fraud Detection OpenShift AI" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3>Fraud Detection with OpenShift AI</h3>
+                        <p>Enterprise-grade fraud detection system with deep neural networks achieving 97.3% accuracy. Built on OpenShift AI with distributed training, ONNX optimization, and production serving via REST/gRPC APIs.</p>
+                        <div class="project-tech">
+                            <span>TensorFlow</span>
+                            <span>OpenShift AI</span>
+                            <span>ONNX</span>
+                            <span>Ray</span>
+                            <span>Kubeflow</span>
+                            <span>MLOps</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/phantom2810/Fraud-Detection-with-OpenShift-AI" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1555255707-c07966088b7b?w=400&h=250&fit=crop&auto=format" alt="LLM Security Testing" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3>Adversarial LLM Security Framework</h3>
+                        <p>Advanced jailbreak simulator using Monte Carlo Tree Search with Double Progressive Widening for testing LLM robustness. Implements white-box optimization and moderation API integration for comprehensive security evaluation.</p>
+                        <div class="project-tech">
+                            <span>PyTorch</span>
+                            <span>Transformers</span>
+                            <span>MCTS</span>
+                            <span>OpenAI API</span>
+                            <span>Security</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/phantom2810/Jailbreak-Simulator-Adversarial-Testing-for-LLMs" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=250&fit=crop&auto=format" alt="RAG Compliance Navigator" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3>RAG-Powered Compliance Navigator</h3>
+                        <p>🏅 Amazon Sambhav Hackathon Finalist - AI-powered export compliance system using RAG architecture with LangChain and FAISS for semantic search. Serves 5,000+ users with natural language querying of regulatory data.</p>
+                        <div class="project-tech">
+                            <span>LangChain</span>
+                            <span>FAISS</span>
+                            <span>OpenAI</span>
+                            <span>Flask</span>
+                            <span>RAG</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/phantom2810/rag-powered-compliance-and-incentive-navigator" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=400&h=250&fit=crop&auto=format" alt="IBM Differential Privacy" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3>IBM Differential Privacy Framework</h3>
+                        <p>Comprehensive privacy-preserving ML system using IBM's Diffprivlib. Implements Laplace, Gaussian mechanisms and private model training with 35% privacy enhancement while maintaining 90% data utility for production deployment.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Diffprivlib</span>
+                            <span>Privacy</span>
+                            <span>Scikit-learn</span>
+                            <span>Flask</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/phantom2810/IBM-Differential-Privacy" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=400&h=250&fit=crop&auto=format" alt="MSMARCO Search Engine" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3>Distributed Search Engine with MSMARCO</h3>
+                        <p>Scalable information retrieval system using MSMARCO dataset with BM25 ranking algorithm. Built inversion tree indexing with Hadoop MapReduce for efficient large-scale document processing and retrieval.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Hadoop</span>
+                            <span>BM25</span>
+                            <span>MapReduce</span>
+                            <span>Information Retrieval</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/phantom2810/Efficient-Search-Engine-Development-Using-the-MSMARCO-Dataset" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=250&fit=crop&auto=format" alt="ChatGPT from Scratch" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3>ChatGPT-Style Language Model from Scratch</h3>
+                        <p>Complete transformer implementation with two-stage training: base GPT pre-training and instruction fine-tuning using Stanford Alpaca dataset. Features multi-head attention, nucleus sampling, and conversational AI capabilities.</p>
+                        <div class="project-tech">
+                            <span>PyTorch</span>
+                            <span>Transformers</span>
+                            <span>Stanford Alpaca</span>
+                            <span>NLP</span>
+                            <span>Fine-tuning</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/phantom2810/ChatGPT-Style-Language-Model-from-Scratch" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=250&fit=crop&auto=format" alt="Fraud Detection OpenShift AI" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3>Enterprise Fraud Detection with OpenShift AI</h3>
+                        <p>Production-grade fraud detection system achieving 97.3% accuracy with TensorFlow/Keras. Features distributed Ray training, ONNX optimization, and comprehensive MLOps pipelines on Red Hat OpenShift AI platform.</p>
+                        <div class="project-tech">
+                            <span>TensorFlow</span>
+                            <span>OpenShift AI</span>
+                            <span>Ray</span>
+                            <span>ONNX</span>
+                            <span>Kubeflow</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/phantom2810/Fraud-Detection-with-OpenShift-AI" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's build something amazing together</p>
+            </div>
+            
+            <div class="contact-content">
+                <p class="contact-description">
+                    I'm always open to discussing new opportunities, interesting projects, 
+                    or just having a chat about AI and technology. Whether you have a question 
+                    or just want to say hi, I'll try my best to get back to you!
+                </p>
+                
+                <div class="contact-actions">
+                    <a href="mailto:aa11057@stern.nyu.edu" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i>
+                        Say Hello
+                    </a>
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://github.com/phantom2810" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/aayush-agarwal/" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:aa11057@stern.nyu.edu" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Aayush Agarwal. Built with ❤️ and lots of ☕</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
 </body>
 </html>
