@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio highlighting skills, work experience and projects">
+    <title>Aayush Agarwal - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BTV0sWCAbm/tfZeQ10PZtUaN14WwYjH+LM6czS4EzFqqpwPIYOvTo95OfzmiPl1x" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="80" tabindex="0">
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Aayush Agarwal</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+            <button class="btn btn-sm btn-outline-secondary ms-lg-3 mt-3 mt-lg-0" id="theme-toggle" aria-label="Toggle dark mode">
+                <i class="bi bi-moon"></i>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<header class="hero">
+    <div class="container">
+        <h1 class="display-4">Aayush Agarwal</h1>
+        <p class="lead">AI Researcher &amp; MS Computer Engineering student at NYU</p>
+        <a href="#contact" class="btn btn-primary mt-3">Get In Touch</a>
+    </div>
+</header>
+
+<main class="container py-5">
+    <section id="about" class="mb-5">
+        <h2>About Me</h2>
+        <p>I am a Computer Engineering graduate student at NYU specializing in artificial intelligence. My work spans multimodal learning, MLOps and distributed training. I enjoy building scalable ML systems that solve real-world problems.</p>
+    </section>
+    <section id="education" class="mb-5">
+        <h2>Education</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h5>New York University <small class="text-muted">MS Computer Engineering, 2023 - 2025</small></h5>
+                <p>Focus on AI with coursework in MLOps, Generative AI and Deep Learning.</p>
+            </div>
+            <div class="timeline-item">
+                <h5>Vishwakarma Institute of Technology <small class="text-muted">B.Tech Computer Engineering, 2018 - 2022</small></h5>
+            </div>
+        </div>
+    </section>
+    <section id="skills" class="mb-5">
+        <h2>Skills</h2>
+        <ul class="list-inline">
+            <li class="list-inline-item badge bg-secondary m-1">Python</li>
+            <li class="list-inline-item badge bg-secondary m-1">SQL</li>
+            <li class="list-inline-item badge bg-secondary m-1">C++</li>
+            <li class="list-inline-item badge bg-secondary m-1">Java</li>
+            <li class="list-inline-item badge bg-secondary m-1">PyTorch</li>
+            <li class="list-inline-item badge bg-secondary m-1">TensorFlow</li>
+            <li class="list-inline-item badge bg-secondary m-1">Docker</li>
+            <li class="list-inline-item badge bg-secondary m-1">Kubernetes</li>
+            <li class="list-inline-item badge bg-secondary m-1">MLflow</li>
+        </ul>
+    </section>
+    <section id="experience" class="mb-5">
+        <h2>Work Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item mb-3">
+                <h5>AI Researcher <small class="text-muted">New York University | May 2024 - Present</small></h5>
+                <p>Fine-tuning ViLT for automated report generation on the MIMIC-CXR dataset and building distributed training pipelines on NYU HPC.</p>
+            </div>
+            <div class="timeline-item mb-3">
+                <h5>Software Engineer (AI) <small class="text-muted">Google via Crest Data | Jan 2022 - Apr 2023</small></h5>
+                <p>Integrated anomaly-detection algorithms into Chronicle, built log monitoring tools with GCP, and automated parser deployment with Docker and Kubernetes.</p>
+            </div>
+            <div class="timeline-item mb-3">
+                <h5>AI Intern <small class="text-muted">Tech M | Jul 2021 - Nov 2021</small></h5>
+                <p>Developed an NLP-driven chatbot using BERT and improved object detection models like YOLO and Faster R-CNN.</p>
+            </div>
+            <div class="timeline-item">
+                <h5>AI Researcher <small class="text-muted">IBM Research | Sep 2020 - Jun 2021</small></h5>
+                <p>Built a web application leveraging IBM's Differential Privacy library and evaluated ML models under privacy constraints.</p>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="mb-5">
+        <h2>Projects</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">MLOps Pipeline for News Recommendation</h5>
+                        <p class="card-text">Provisioned cloud GPUs with Terraform and Ansible, used PyTorch Lightning with Ray and tracked experiments in MLflow.</p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href="#" class="btn btn-primary">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Export Compliance Information Aggregator</h5>
+                        <p class="card-text">RAG-powered pipeline using LangChain, FAISS and OpenAI embeddings served via Flask for natural-language queries.</p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href="#" class="btn btn-primary">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Jailbreak Detection for LLMs</h5>
+                        <p class="card-text">Framework for simulating adversarial jailbreaks on GPT-based LLMs using PyTorch and Hugging Face Transformers.</p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href="#" class="btn btn-primary">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="mb-5">
+        <h2>Contact</h2>
+        <p><i class="bi bi-envelope"></i> <a href="mailto:aa11057@stern.nyu.edu">aa11057@stern.nyu.edu</a></p>
+        <p><i class="bi bi-phone"></i> +1 929-703-9945</p>
+        <p><i class="bi bi-linkedin"></i> <a href="https://www.linkedin.com/in/aayush-agarwal/">LinkedIn</a></p>
+        <p><i class="bi bi-github"></i> <a href="https://github.com/AayushAgarwal">GitHub</a></p>
+    </section>
+</main>
+
+<footer class="bg-light text-center py-3">
+    <div class="container">
+        <p class="mb-0">&copy; <span id="year"></span> Aayush Agarwal. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-mQ93Sfx8bVsgcF6edSxnl2xe50Tzw9uQWGWpZJYG1ChB+FA9bUkO+ogzAm8h1sxG" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>

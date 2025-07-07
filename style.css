@@ -1,0 +1,47 @@
+:root {
+    --background-color: #ffffff;
+    --text-color: #212529;
+    --link-color: #0d6efd;
+    --card-bg: #f8f9fa;
+    --transition-speed: 0.3s;
+}
+
+body.dark-mode {
+    --background-color: #212529;
+    --text-color: #f8f9fa;
+    --link-color: #66b2ff;
+    --card-bg: #343a40;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color var(--transition-speed),
+        color var(--transition-speed);
+}
+
+a {
+    color: var(--link-color);
+}
+
+.card {
+    background-color: var(--card-bg);
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #0d6efd, #6610f2);
+    color: #fff;
+    text-align: center;
+}
+
+.timeline {
+    border-left: 3px solid var(--link-color);
+    padding-left: 1rem;
+}
+
+
+/* Add additional custom styling as desired */
