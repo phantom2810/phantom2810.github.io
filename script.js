@@ -332,9 +332,15 @@ class ProjectInteractions {
         
         projectLinks.forEach(link => {
             link.addEventListener('click', (e) => {
-                e.preventDefault();
-                // Here you could implement a modal or redirect to project details
+                // Allow the default link behavior to work (navigate to GitHub)
+                // Add any additional tracking or animations if needed
                 console.log('Project link clicked:', link.closest('.project-card').querySelector('h3').textContent);
+                
+                // Add a subtle click animation
+                link.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    link.style.transform = '';
+                }, 150);
             });
         });
     }
