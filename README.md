@@ -46,8 +46,8 @@ A sleek, modern portfolio website built with vanilla HTML, CSS, and JavaScript. 
 **Aayush Agarwal**
 
 - Email: aa11057@stern.nyu.edu
-- LinkedIn: [aayush-agarwal](https://www.linkedin.com/in/aayush-agarwal-279144a5/)
-- GitHub: [AayushAgarwal](https://github.com/phantom2810)
+- LinkedIn: [aayush-agarwal-279144a5](https://www.linkedin.com/in/aayush-agarwal-279144a5/)
+- GitHub: [phantom2810](https://github.com/phantom2810)
 
 ---
 
